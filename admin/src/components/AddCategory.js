@@ -34,7 +34,7 @@ function AddCategory() {
         
         
         try {
-            const response = await axios.post('http://localhost:3307/api/addCategory', formData);
+            const response = await axios.post('https://digital-menu-backend-mjz7.onrender.com/api/addCategory', formData);
             if (response.data.success) {
                 setData({ title: "" });
                 setImage(null);
