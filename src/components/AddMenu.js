@@ -14,7 +14,7 @@ const AddMenu = () => {
 
     // Send a POST request to the server
     try {
-        const response = await fetch('http://localhost:5000/api/Menus', {
+        const response = await fetch('https://digital-menu-backend-mjz7.onrender.com/api/Menus', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
