@@ -9,7 +9,7 @@ import { StoreContext } from './StoreContext';
 function Menucard({ product }) {
    
 
-const { cartItems,setCartItems,addToCart,removeFromCart}=useContext(StoreContext);
+const { cartItems,addToCart,removeFromCart}=useContext(StoreContext);
 
   return (
     <>
