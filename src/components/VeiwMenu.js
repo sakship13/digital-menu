@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import ShowMenu from "./ShowMenu";
-import Footer from "./Footer";
 import ChefNav from "./ChefNav";
 import ExploreMenu from "./ExploreMenu";
-import PlaceOrder from "./PlaceOrder";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Cart from "./Cart";
 function VeiwMenu() {
   const [error, setError] = useState(null);
