@@ -44,10 +44,10 @@ function ChefNav() {
       // Check if scroll position is greater than or equal to 50
       if (currentScrollPos >= 50) {
         setHeaderActive(true);
-        setBackTopBtnActive(true);
+        
       } else {
         setHeaderActive(false);
-        setBackTopBtnActive(false);
+       
       }
     };
 
