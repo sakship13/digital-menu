@@ -14,7 +14,7 @@ function VeiwMenu() {
     // Fetch products from the server
     const fetchItems = async () => {
       try {
-        const response = await fetch("http://localhost:3307/api/Category");
+        const response = await fetch("https://digital-menu-backend-mjz7.onrender.com/api/Category");
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
