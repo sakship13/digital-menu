@@ -7,7 +7,7 @@ function List() {
     try{
 
     
-     const response = await axios.get('http://localhost:3307/api/Menus');
+     const response = await axios.get('https://digital-menu-backend-mjz7.onrender.com/api/Menus');
     console.log(response.data);
      
       setList(response.data);
@@ -18,7 +18,7 @@ function List() {
   }
   const removeFood = async(foodId)=>{
     try {
-      const response = await axios.post('http://localhost:3307/api/removeMenus', { id: foodId });
+      const response = await axios.post('https://digital-menu-backend-mjz7.onrender.com/api/removeMenus', { id: foodId });
       console.log("Remove Response:", response.data);
       // Handle the success or failure based on the server's response
       if (response.data.success) {
@@ -51,7 +51,7 @@ function List() {
             console.log("Item:", item);
             return (
               <div key={index} className="list-table-format">
-                <img src={`http://localhost:3307/uploads/${item.image}`} alt={item.name} />
+                <img src={`https://digital-menu-backend-mjz7.onrender.com/uploads/${item.image}`} alt={item.name} />
                 <p>{item.name}</p>
                 <p>{item.category}</p>
                 <p>{item.price}</p>
