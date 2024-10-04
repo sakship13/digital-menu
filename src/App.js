@@ -6,14 +6,10 @@ import ChefNav from "./components/ChefNav";
 import Cart from "./components/Cart";
 import Events from "./components/Events";
 import Hero from "./components/Hero";
-import Menu from "./components/Menu";
 import Navbar from "./components/Navbar";
 import Service from "./components/Service";
 import Special from "./components/Special";
 import Footer from "./components/Footer";
-import Testimonials from "./components/Testimonials";
-import Reservation from "./components/Reservation";
-import About from "./components/About";
 import OrderDetails from "./components/OrderDetails";
 import VeiwMenu from "./components/VeiwMenu";
 
