@@ -24,7 +24,7 @@ function Add() {
   };
   const fetchCategory = async () => {
     try {
-      const response = await axios.get("http://localhost:3307/api/Category");
+      const response = await axios.get("https://digital-menu-backend-mjz7.onrender.com/api/Category");
       console.log(response.data);
 
       setList(response.data);
