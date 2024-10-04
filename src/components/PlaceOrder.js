@@ -45,7 +45,7 @@ function PlaceOrder() {
         amount:getTotalCartAmount()+2,
       }
       // Send order data to the backend
-      const response = await axios.post('http://localhost:3307/api/placeOrder', data);
+      const response = await axios.post('https://digital-menu-backend-mjz7.onrender.com/api/placeOrder', data);
 
       if (response.data.success) {
         console.log("Order placed successfully");
