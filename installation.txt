@@ -1,0 +1,17 @@
+install xampp
+
+npm start
+npm run build
+npm install ajv@latest ajv-keywords@latest
+rm -rf node_modules package-lock.json
+npm install axios react-router-dom
+
+cd backend/ -npm install
+npm install express mysql body-parser cors multer
+node Server-copy.js
+
+cd frontend/ -npm install
+npm start
+
+cd admin/ -npm install
+npm start
