@@ -11,7 +11,7 @@ function ExploreMenu({ category, setCategory,product }) {
        <div className="explore-menu-category">
           <div className="category-title navbar-link"onClick={()=>setCategory(Prev=>Prev===product.title?"All":product.title)} >
             <img
-              src={'http://localhost:3307'+"/uploads/"+ product.image}
+              src={'https://digital-menu-backend-mjz7.onrender.com'+"/uploads/"+ product.image}
               width="100"
               height="100"
               loading="lazy"
