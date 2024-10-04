@@ -7,7 +7,7 @@ function OrderDetails() {
 
   const fetchOrders = async () => {
     try {
-      const response = await axios.get('http://localhost:3307/api/userOrders');
+      const response = await axios.get('https://digital-menu-backend-mjz7.onrender.com/api/userOrders');
       // Parse the items string back into an array
       const formattedOrders = response.data.data.map(order => ({
         ...order,
