@@ -11,7 +11,7 @@ const StoreContextProvider =(props)=>{
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('http://localhost:3307/api/Menus');
+        const response = await fetch('https://digital-menu-backend-mjz7.onrender.com/api/Menus');
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
