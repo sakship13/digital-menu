@@ -16,7 +16,7 @@ function Login({ setIsLoggedIn }) {
     }
     const onLogin =async(event)=>{
          event.preventDefault();
-         const response = await axios.post('http://localhost:3307/api/login',data);
+         const response = await axios.post('https://digital-menu-backend-mjz7.onrender.com/api/login',data);
          if(response.data.success){
             toast.success("Login successful")
             setIsLoggedIn(true);
