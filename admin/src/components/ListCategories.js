@@ -7,7 +7,7 @@ function ListCategories() {
     try{
 
     
-     const response = await axios.get('http://localhost:3307/api/Category');
+     const response = await axios.get('https://digital-menu-backend-mjz7.onrender.com/api/Category');
     console.log(response.data);
      
       setList(response.data);
@@ -18,7 +18,7 @@ function ListCategories() {
   }
   const removeCategory = async (categoryId) => {
     try {
-      const response = await axios.post('http://localhost:3307/api/removeCategory', { id: categoryId });
+      const response = await axios.post('https://digital-menu-backend-mjz7.onrender.com/api/removeCategory', { id: categoryId });
       console.log("Remove Response:", response.data);
       if (response.data.success) {
         await fetchList(); // Refresh the list after deletion
@@ -49,7 +49,7 @@ function ListCategories() {
             console.log("Item:", item);
             return (
               <div key={index} className="list-table-format">
-                <img src={`http://localhost:3307/uploads/${item.image}`} alt={item.name} />
+                <img src={`https://digital-menu-backend-mjz7.onrender.com/uploads/${item.image}`} alt={item.name} />
                 <p>{item.id}</p>
                 <p>{item.title}</p>
                 <p onClick={()=>removeCategory(item.id)} className='cursor'>X</p>
