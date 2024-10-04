@@ -1,7 +1,5 @@
 import React from "react";
 import "./ExploreMenu.css";
-import { useState, useEffect, useRef } from "react";
-import { Prev } from "react-bootstrap/esm/PageItem";
 function ExploreMenu({ category, setCategory,product }) {
   
 
