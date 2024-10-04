@@ -14,7 +14,6 @@ function ChefNav() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [lastScrollPos, setLastScrollPos] = useState(0);
   const [headerActive, setHeaderActive] = useState(false);
-  const [backTopBtnActive, setBackTopBtnActive] = useState(false);
   const [headerHidden, setHeaderHidden] = useState(false);
 
   const toggleNavbar = () => {
