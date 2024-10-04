@@ -27,7 +27,7 @@ function AddEvents() {
         formData.append("title", data.title);
 
         try {
-            const response = await axios.post('http://localhost:3307/api/addEvent', formData);
+            const response = await axios.post('https://digital-menu-backend-mjz7.onrender.com/api/addEvent', formData);
             if (response.data.success) {
                 setData({ title: "", subtitle: "", date: "" });
                 setImage(null);
