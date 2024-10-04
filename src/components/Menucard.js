@@ -16,7 +16,7 @@ const { cartItems,setCartItems,addToCart,removeFromCart}=useContext(StoreContext
     <div className="food-item-container">
     <div className="food-item">
       <div className="food-item-img-container">
-        <img src={'http://localhost:3307'+"/uploads/"+ product.image} alt="" className="food-item-image" />
+        <img src={'https://digital-menu-backend-mjz7.onrender.com'+"/uploads/"+ product.image} alt="" className="food-item-image" />
         {!cartItems[product.id] ? <img className='add' onClick={()=>addToCart(product.id)} src={add_icon_white} alt="Add Icon (white)"/> 
           : <div className="food-item-Counter">
             <img onClick={()=>removeFromCart(product.id)} src={add_icon_red} alt="remove icon"/> 
