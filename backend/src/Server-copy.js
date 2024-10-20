@@ -39,6 +39,7 @@ const db = mysql.createConnection({
   user: 'root',
   password: '',
   database: 'menu_cart',
+  port: 3306 
 });
 
 db.connect((err) => {
