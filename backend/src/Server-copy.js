@@ -5,7 +5,7 @@ const fs = require('fs');
 const bodyParser = require('body-parser');
 const cors = require('cors'); // Import the cors middleware
 const app = express();
-const port = process.env.PORT ||3307; // You can use any port you prefer
+const port = 3306 ||3307; // You can use any port you prefer
 app.use(cors()); // Use the cors middleware to allow cross-origin requests
 
 // Middleware to parse JSON requests
