@@ -35,11 +35,11 @@ const upload = multer({ storage: storage });
 
 // Create a MySQL connection
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'menu_cart',
-  port: 3306 
+  host: 'sql304.infinityfree.com', 
+  user: 'if0_37572597',         
+  password: '',      
+  database: 'if0_37572597_menu_cart',  
+  port: 3306  
 });
 
 db.connect((err) => {
